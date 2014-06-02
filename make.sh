@@ -1,5 +1,8 @@
 #!/bin/bash
 #Converts all 24 images to 200x200
+#Tools needed: convert, composite, display, zenity
+#files needed: 1-24.jpg, fethstr.png, c2h.png, c2v.png
+
 
 #Creates tempout.jpg
 convert -size 900x400 xc:skyblue tempout.jpg
@@ -209,6 +212,45 @@ composite -geometry 100x100+800+0! 23tmp.jpg tempout.jpg tempout.jpg
 
 #Adding strokes
 composite -geometry 900x400+0+0! fethstr.png tempout.jpg finalpic.jpg
+
+echo "Cleaning temporary files."
+rm 2tmp.jpg
+rm 3tmp.jpg
+rm 4tmp.jpg
+rm 5tmp.jpg
+rm 6tmp.jpg
+rm 7tmp.jpg
+rm 8tmp.jpg
+rm 9tmp.jpg
+rm 10tmp.jpg
+rm 11tmp.jpg
+rm 12tmp.jpg
+rm 13tmp.jpg
+rm 14tmp.jpg
+rm 15tmp.jpg
+rm 16tmp.jpg
+rm 17tmp.jpg
+rm 18tmp.jpg
+rm 19tmp.jpg
+rm 20tmp.jpg
+rm 21tmp.jpg
+rm 22tmp.jpg
+rm 23tmp.jpg
+rm tempout.jpg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #display the current tempout
